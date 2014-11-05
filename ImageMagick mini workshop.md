@@ -1,4 +1,4 @@
-# Imagemagick
+# 1- Imagemagick
 
 ### Installation
 apt-get update
@@ -20,7 +20,7 @@ convert *.jpg anim.gif
 
 http://www.imagemagick.org/Usage/
 
-# FFmpeg
+# 2- FFmpeg
 
 ### Installation
 apt-get ffmpeg
