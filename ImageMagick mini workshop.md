@@ -1,22 +1,24 @@
 # Imagemagick
 
-## Installation
+### Installation
 apt-get update
 apt-get imagemagick
 
 brew update
 brew install imagemagick
 
-## Some commands
+### Some commands
 convert image.jpg image.png
 convert *.jpg -resize 400% -colors 2  export/%d.png
 convert *.jpg anim.gif
 
-# FFmpeg Installation
+# FFmpeg
+
+### Installation
 apt-get ffmpeg
 brew install ffmpeg
 
-## Some commands
+### Some commands
 mkdir seq
 ffmpeg -i movie.mov seq/%d.png
 mkdir resized
