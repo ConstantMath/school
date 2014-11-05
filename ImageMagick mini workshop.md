@@ -20,7 +20,11 @@ brew install ffmpeg
 
 ### Some commands
 mkdir seq
+
 ffmpeg -i movie.mov seq/%d.png
+
 mkdir resized
+
 convert seq/{1..25}.png -resize 20% resized/%d.png
+
 convert -delay 3 -loop 0 resized/*.png anim.gif
