@@ -9,6 +9,8 @@ brew install imagemagick
 
 ### Some commands
 convert image.jpg image.png
+convert *.jpg -colors 2  export/%d.png
+convert *.jpg -resize 400%  export/%d.png
 convert *.jpg -resize 400% -colors 2  export/%d.png
 convert *.jpg anim.gif
 
