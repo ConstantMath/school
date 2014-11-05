@@ -1,0 +1,18 @@
+apt-get update
+apt-get imagemagick
+
+brew update
+brew install imagemagick
+
+convert image.jpg image.png
+convert *.jpg -resize 400% -colors 2  export/%d.png
+convert *.jpg anim.gif
+
+apt-get ffmpeg
+brew install ffmpeg
+
+mkdir seq
+ffmpeg -i movie.mov seq/%d.png
+mkdir resized
+convert seq/{1..25}.png -resize 20% resized/%d.png
+convert -delay 3 -loop 0 resized/*.png anim.gif
