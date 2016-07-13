@@ -20,6 +20,9 @@ convert *.jpg anim.gif
 
 http://www.imagemagick.org/Usage/
 
+for file in ​*.*​; do convert $file -resize 10x10  export/$file; done
+
+
 # 2- FFmpeg
 
 ### Installation
